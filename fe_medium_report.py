@@ -36,7 +36,7 @@ top_articles = enrichedDF.toPandas().head(20)
 
 # Create bar chart using Top 20 articles data
 fig = px.bar(top_articles, x='author', y='claps', 
-             labels={'author':'Article Author', 'claps':'Number of Claps'},
+             labels={'author':'Article Author', 'claps':'Num of Claps'},
              hover_data={'author': True, 'link': True, 'summary': True},
              height=400)
 
